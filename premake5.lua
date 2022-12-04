@@ -3,8 +3,8 @@ project "GLFW"
 	language "C"
 	staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/" .. OutputDirectory .. "/%{prj.name}")
+	objdir ("bin-int/" .. OutputDirectory .. "/%{prj.name}")
 
 	files
 	{
@@ -89,4 +89,4 @@ project "GLFW"
 	filter "configurations:Dist"
 		runtime "Release"
 		optimize "on"
-        symbols "off"
+        	symbols "off"
