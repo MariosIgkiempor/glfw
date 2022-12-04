@@ -4,7 +4,7 @@ project "GLFW"
 	staticruntime "off"
 
 	targetdir ("bin/" .. OutputDirectory .. "/%{prj.name}")
-	objdir ("bin-int/" .. OutputDirectory .. "/%{prj.name}")
+	objdir ("bin-intermediate/" .. OutputDirectory .. "/%{prj.name}")
 
 	files
 	{
@@ -89,4 +89,4 @@ project "GLFW"
 	filter "configurations:Dist"
 		runtime "Release"
 		optimize "on"
-        	symbols "off"
+        symbols "off"
